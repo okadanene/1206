@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*
+Theme Name: Recruit LP
+Theme URI: 
+Description: Recruit LP
+Version: 1.0.0
+Author: Nene Okada
+Author URI: 
+*/
+
+/* ページ全体 */
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+
+/* ページ全体 */
+
+/* ヘッダー */
+
+header {
+    background-color: white;
+    height: 10%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4% 10px;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+}
+
+li {
+    margin: 0 0 0 15px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.header-img {
+    width: 150px;
+}
+
+/* ヘッダー */
+
+.main {
+    padding: 400px 100px;
+}
+
+/* セクション１ */
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.section1 i {
+    font-size: 70px;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.section1 {
+    margin-bottom: 200px;
+}
+
+.item {
+    margin: 100px;
+}
+
+/* セクション１ */
+
+/* セクション２ */
+
+.section2-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッドを作成 */
+    gap: 30px 15px;
+}
+
+.recruit {
+    padding: 10px;
+    background-color: #F0F0F0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: black;
+    color: #eee;
+}
+
+.section2 h3 {
+    margin: 100px;
+    font-size: 30px;
+}
+
+
+
+/* セクション２ */
+
+/* セクション３ */
+
+.section3 {
+    text-align: left;
+}
+
+#company {
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+.section3-1 {
+    display: flex;
+}
+
+.section3-2 {
+    display: flex;
+}
+
+.section3-item {
+    padding: 40px;
+    padding-top: 20px;
+}
+
+/* セクション３ */
+
+/* フッター */
+
+footer {
+    background-color: black;
+    height: 10%;
+    bottom: 0;    display: flex;    display: flex;
+    align-items: center;
+    padding: 30px 4% 10px;
+}
+
+.footer-menu a {
+    color: white;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+/* フッター */
+
+/* 採用情報ページ */
+
+.page-id-6 main {
+    padding: 100px;
+}
+
+#text {
+    text-align: left;
+}
+
+.wp-block-table table {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+td p {
+    font-size: 15px;
+}
+
+
+.sp-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    transition: all .2s ease-in-out;
+    opacity: 0;
+   transform: translateY(-100%);
+}
+
+.sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sp-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+}
+
+.sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+}
+
+/*基準となるli要素*/
+.sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+}
+ /*バツ印線1*/
+.sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+}
+/*バツ印線2*/
+.sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+}
+
+.toggle {
+    transform: translateY( 0 );
+    opacity: 1;
+}
+
+.sp-nav a {
+    color: #eee;
+}
+
+/* 採用情報ページ */
+
+
+@media screen and (max-width:768px) {
+
+.header-menu {
+    display: none;
+}
+
+header {
+    padding: 0;
+}
+
+.main {
+    padding: 200px 0;
+}
+
+.section2-item {
+    padding: 0;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+
+.section3-item {
+    padding:20px;
+}
+
+.section3-1 {
+    display: block;
+}
+
+.section3-2 {
+    display: block;
+}
+
+#menu {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 0 0 auto;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+ }
+
+#menu span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+#menu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+#menu::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+}
